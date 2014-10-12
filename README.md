@@ -30,10 +30,13 @@ the simulation:
 - stop  : Will pause the simulation
 - next  : Will advance the simulation by one generation
 - load  : Will allow you to load a JSON configuration file (not yet implemented)
-- set   : Will allow you to set the speed, survivalrate, etc. (not yet implement)
+- set   : Will allow you to set the speed, survivalrate, etc.
 
 
 ## Release History
+
+### v.0.0.2
+Implemented the `set` command.
 
 ### v0.0.1
 First working release. Many things are not implemented, but the following should work:
