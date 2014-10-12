@@ -54,7 +54,7 @@ Copyright (c) 2014 Paul McMonagle. Licensed under the MIT license.
 [npm-url]: https://npmjs.org/package/cursedlife
 [npm-image]: https://badge.fury.io/js/cursedlife.svg
 [travis-url]: https://travis-ci.org/pmcmonagle/cursedlife
-[travis-image]: https://travis-ci.org/pmcmonagle/cursedlife.svg?branch=master
+[travis-image]: https://travis-ci.org/pmcmonagle/CursedLife.svg?branch=master
 [daviddm-url]: https://david-dm.org/pmcmonagle/cursedlife.svg?theme=shields.io
 [daviddm-image]: https://david-dm.org/pmcmonagle/cursedlife
 [coveralls-url]: https://coveralls.io/r/pmcmonagle/cursedlife
