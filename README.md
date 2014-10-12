@@ -9,6 +9,8 @@ Haha! The answer is simple, my friends:
 - Mine is different.
 - The others I found were slightly confusing, and didn't allow custom rulesets.
 
+There's a known bug with node-ncurses which causes strange graphic behavior
+in the OSX terminal. The program will still run, but will look odd.
 
 ## Install
 
@@ -26,23 +28,44 @@ $ cursedlife
 ```
 Once it's running, the program can accept several commands to control
 the simulation:
-- start : Will unpause the simulation
-- stop  : Will pause the simulation
-- next  : Will advance the simulation by one generation
-- load  : Will allow you to load a JSON configuration file (not yet implemented)
-- set   : Will allow you to set the speed, survivalrate, etc.
+- `start` : Will unpause the simulation
+- `stop`  : Will pause the simulation
+- `next`  : Will advance the simulation by one generation
+- `load`  : Will allow you to load a JSON configuration file.
+- `set`   : Will allow you to set the speed, survivalrate, etc.
 
 
 ## Release History
 
+### v.0.0.3
+Partially implemented the `load` command.
+
+Loading JSON files from a patterns directory works. Currently,
+only simulation state is read from the JSON. The ability to
+read other configuration data from the JSON is planned.
+
+Example:
+- `load patterns/gospergun.json`
+
 ### v.0.0.2
-Implemented the `set` command.
+Implemented the `set` command for all variables that can be user defined.
+
+Surviverate and birthrate are sets of integers from 0-8. A surviverate of
+23 indicates that a cell will survive if it has either 2 or 3 active
+neighbours. Interval is the time, in ms, between each generation.
+Examples:
+- `set surviverate 246`
+- `set birthrate 35`
+- `set generation 0`
+- `set interval 1000`
+- `set posChar @`
+- `set negChar .`
 
 ### v0.0.1
 First working release. Many things are not implemented, but the following should work:
-- start
-- stop
-- next
+- `start`
+- `stop`
+- `next`
 
 
 ## License
