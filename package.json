@@ -1,7 +1,7 @@
 {
   "name": "cursedlife",
   "description": "An implementation of Conway's Game of Life using NodeJS and NCurses.",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "homepage": "https://github.com/pmcmonagle/cursedlife",
   "bugs": "https://github.com/pmcmonagle/cursedlife/issues",
   "license": "MIT",

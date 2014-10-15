@@ -26,18 +26,69 @@ Simply run the program from command line:
 ```bash
 $ cursedlife
 ```
+
+### Commands
+
 Once it's running, the program can accept several commands to control
 the simulation:
 - `start` : Will unpause the simulation
 - `stop`  : Will pause the simulation
 - `next`  : Will advance the simulation by one generation
+- `clear` : Will clear the entire screen, turning all cells off.
 - `load`  : Will allow you to load a JSON configuration file.
 - `set`   : Will allow you to set the speed, survivalrate, etc.
 
+Simply start typing; the text will appear in the input panel along
+the bottom of the window. Hit 'ENTER' to submit your command.
+
+### Cursor
+
+Use the arrow keys to move the cursor in the output panel. Hitting
+'ENTER' will toggle the currently selected cell.
+
+### Loading Files
+`load <filename>`; eg. `load patterns/gospergun.json`
+
+The load command looks for files in the directory that the
+program was executed from. For example, if you cd to a directory
+full of JSON files before running `$ cursedlife`, all of those
+files will be accessible to the program without having to type 
+the full path.
+
+The files should be JSON, and should follow the this template:
+```json
+{
+    "posChar": "@",
+    "negChar": " ",
+    "birthrate": 3,
+    "surviverate: 23,
+    "state": [
+        [false, false, false, false],
+        [false, false, true,  true ],
+        [false, false, true,  true ]
+    ]
+}
+```
+Note that all of the values are optional; you can have a JSON
+file that specifies only state, birthrate and surviverate, or
+any other combinations.
 
 ## Release History
 
-### v.0.0.3
+### v1.0.0
+Implemented a `clear` command. Also implemented the ability
+to move a cursor using the arrow keys, and toggle a specific
+cell using the ENTER key.
+
+Bumped the major version number; these are all of the originally
+planned features, so I'm calling it the 1.0 release!
+
+### v0.0.4
+The `load` command is now able to read other configuration
+options. For example, you can specify birthrate, surviverate
+and negative/positive characters in the JSON.
+
+### v0.0.3
 Partially implemented the `load` command.
 
 Loading JSON files from a patterns directory works. Currently,
@@ -47,7 +98,7 @@ read other configuration data from the JSON is planned.
 Example:
 - `load patterns/gospergun.json`
 
-### v.0.0.2
+### v0.0.2
 Implemented the `set` command for all variables that can be user defined.
 
 Surviverate and birthrate are sets of integers from 0-8. A surviverate of
