@@ -9,8 +9,15 @@ Haha! The answer is simple, my friends:
 - Mine is different.
 - The others I found were slightly confusing, and didn't allow custom rulesets.
 
-There's a known bug with node-ncurses which causes strange graphic behavior
-in the OSX terminal. The program will still run, but will look odd.
+### Known Issues
+#### Mac OSX
+NCurses output in the OSX terminal is often rendered incorrectly. Commands will initially appear garbled as they're typed, but should still work as expected.
+
+#### Linux
+Installation of the package will sometimes fail due to missing build componenets for NCurses. On Debian-based systems, try running `sudo apt-get install build-essential` before installing cursedlife.
+
+#### Windows
+Windows is not supported. :(
 
 ## Install
 
