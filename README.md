@@ -9,7 +9,7 @@ Haha! The answer is simple, my friends:
 - Mine is different.
 - The others I found were slightly confusing, and didn't allow custom rulesets.
 
-### Known Issues
+## Known Issues
 #### Mac OSX
 NCurses output in the OSX terminal is often rendered incorrectly. Commands will initially appear garbled as they're typed, but should still work as expected.
 
