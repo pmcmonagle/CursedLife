@@ -10,6 +10,9 @@ Haha! The answer is simple, my friends:
 - The others I found were slightly confusing, and didn't allow custom rulesets.
 
 ## Known Issues
+#### Node.JS
+NCurses fails to build on Node 0.12.0 using node-gyp; there's not a lot I can do on that front. The best solution I've found is to use NVM and load up Node 0.10.37.
+
 #### Mac OSX
 NCurses output in the OSX terminal is often rendered incorrectly. Commands will initially appear garbled as they're typed, but should still work as expected.
 
