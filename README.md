@@ -9,8 +9,14 @@ Haha! The answer is simple, my friends:
 - Mine is different.
 - The others I found were slightly confusing, and didn't allow custom rulesets.
 
-There's a known bug with node-ncurses which causes strange graphic behavior
-in the OSX terminal. The program will still run, but will look odd.
+Sadly, node-ncurses is no longer actively supported. I had considered updating
+the node-ncurses project myself and making a pull request, but that's quite a
+bit of work, and wouldn't be worth it considering how successful blessed is.
+This branch is a port of CursedLife from node-ncurses to blessed.
+
+TODO:
+1. Replace node-ncurses with blessed
+2. Update README.md
 
 ## Install
 
