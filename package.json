@@ -1,13 +1,13 @@
 {
-  "name": "cursedlife",
+  "name":        "cursedlife",
   "description": "An implementation of Conway's Game of Life using NodeJS and NCurses.",
-  "version": "1.0.0",
-  "homepage": "https://github.com/pmcmonagle/cursedlife",
-  "bugs": "https://github.com/pmcmonagle/cursedlife/issues",
-  "license": "MIT",
-  "main": "lib/cursedlife.js",
+  "version":     "2.0.0",
+  "homepage":    "https://github.com/pmcmonagle/cursedlife",
+  "bugs":        "https://github.com/pmcmonagle/cursedlife/issues",
+  "license":     "MIT",
+  "main":        "lib/cursedlife.js",
   "author": {
-    "name": "Paul McMonagle",
+    "name":  "Paul McMonagle",
     "email": "mcmonagle.paul@gmail.com"
   },
   "bin": {
@@ -15,28 +15,28 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pmcmonagle/cursedlife"
+    "url":  "https://github.com/pmcmonagle/cursedlife"
   },
-  "keywords":[],
+  "keywords": [],
   "dependencies": {
-    "debug": "2.0.0",
-    "ncurses": "git://github.com/mscdex/node-ncurses.git#master"
+    "blessed": "^0.1.61",
+    "debug":   "2.0.0"
   },
   "devDependencies": {
-    "gulp": "^3.6.2",
-    "gulp-util": "2.2.16",
-    "gulp-bump": "^0.1.8",
-    "gulp-jscs": "^0.4.2",
-    "gulp-jshint": "^1.5.5",
-    "gulp-mocha": "^0.4.1",
-    "coveralls": "^2.10.0",
-    "should": "^3.3.1",
-    "jshint-stylish": "^0.2.0",
-    "gulp-load-plugins": "^0.5.1",
-    "gulp-plumber": "^0.6.2"
+    "gulp":               "^3.6.2",
+    "gulp-util":          "2.2.16",
+    "gulp-bump":          "^0.1.8",
+    "gulp-jscs":          "^0.4.2",
+    "gulp-jshint":        "^1.5.5",
+    "gulp-mocha":         "^0.4.1",
+    "coveralls":          "^2.10.0",
+    "should":             "^3.3.1",
+    "jshint-stylish":     "^0.2.0",
+    "gulp-load-plugins":  "^0.5.1",
+    "gulp-plumber":       "^0.6.2"
   },
   "scripts": {
     "coveralls": "gulp test && cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
-    "test": "gulp test"
+    "test":      "gulp test"
   }
 }
