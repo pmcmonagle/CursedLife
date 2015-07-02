@@ -1,7 +1,7 @@
 # CursedLife 
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-url]][daviddm-image]
 
-An implementation of Conway's Game of Life using NodeJS and NCurses.
+An implementation of Conway's Game of Life using NodeJS and ~~NCurses~~ Blessed.
 
 "But Paul, why build yet another Game of Life simulator for NodeJS?"
 Haha! The answer is simple, my friends:
@@ -9,14 +9,13 @@ Haha! The answer is simple, my friends:
 - Mine is different.
 - The others I found were slightly confusing, and didn't allow custom rulesets.
 
-Sadly, node-ncurses is no longer actively supported. I had considered updating
-the node-ncurses project myself and making a pull request, but that's quite a
-bit of work, and wouldn't be worth it considering how successful blessed is.
-This branch is a port of CursedLife from node-ncurses to blessed.
-
-TODO:
-1. Replace node-ncurses with blessed
-2. Update README.md
+Since version 2.0, this project uses the blessed library in place of node-ncurses.
+The node-ncurses project wasn't being actively supported, and didn't work on newer
+versions of Node (eg. 0.12) for a long time. Blessed is slightly less performant, but
+has much better compatability than the node-curses project ever had. Unfortunately
+there is already a Game of Life simulator written in blessed, so I lose a little bit
+of uniqueness. However, I think that I've done enough differently in this project
+that it's still worthwhile even after the switch.
 
 ## Install
 
@@ -80,6 +79,9 @@ file that specifies only state, birthrate and surviverate, or
 any other combinations.
 
 ## Release History
+
+### v2.0.0
+Re-wrote the UI fully to use blessed in place of node-ncurses.
 
 ### v1.0.0
 Implemented a `clear` command. Also implemented the ability
