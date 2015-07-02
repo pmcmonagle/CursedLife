@@ -20,7 +20,7 @@
   "keywords":[],
   "dependencies": {
     "debug": "2.0.0",
-    "ncurses": "0.4.1"
+    "ncurses": "git://github.com/mscdex/node-ncurses.git#master"
   },
   "devDependencies": {
     "gulp": "^3.6.2",
